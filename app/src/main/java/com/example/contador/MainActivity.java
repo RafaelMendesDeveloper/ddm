@@ -2,15 +2,15 @@ package com.example.contador;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity{
-    int contador = 0;
+import java.util.Random;
 
+public class MainActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,14 +20,13 @@ public class MainActivity extends AppCompatActivity{
         TextView myText = findViewById(R.id.textView);
         Button myButton = findViewById(R.id.button);
 
-        myText.setText(Integer.toString(contador));
-        myButton.setText("AUMENTAR");
+        myText.setText("0");
+        myButton.setText("RANDOMIZAR");
         myButton.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
-                contador++;
-                myText.setText(Integer.toString(contador));
+                Random random = new Random();
+                myText.setText(Integer.toString(random.nextInt(100)));
             }
         });
     }
