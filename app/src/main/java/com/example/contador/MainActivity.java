@@ -18,30 +18,24 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView myText = findViewById(R.id.textView);
-        Button myButton = findViewById(R.id.button);
+        Button buttonSave = findViewById(R.id.buttonSave);
+        EditText notas = findViewById(R.id.editText1);
+        TextView notaVisualizada = findViewById(R.id.textViewNote);
 
-        EditText inicio = findViewById(R.id.editText1);
-        EditText fim = findViewById(R.id.editText2);
+        buttonSave.setText("SALVAR");
 
-        myText.setText("DIGITE UM VALOR");
-        myButton.setText("RANDOMIZAR");
-
-        if(inicio.getText() != null && fim.getText() != null){
-            myButton.setOnClickListener(new View.OnClickListener() {
+        if(notas.getText() != null){
+            buttonSave.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View view) {
+                public void onClick(View v) {
+                    // Obtém o texto do EditText
+                    String noteText = notas.getText().toString();
 
-                    Random random = new Random();
+                    // Exibe o texto no TextView
+                    notaVisualizada.setText(noteText);
 
-                    int inicioNum = Integer.parseInt(inicio.getText().toString());
-                    int fimNum = Integer.parseInt(fim.getText().toString());
-
-                    if(inicioNum<fimNum){
-                        myText.setText(Integer.toString(random.nextInt(fimNum - inicioNum) + inicioNum));
-                    } else {
-                        myText.setText("VALOR INVÁLIDO");
-                    }
+                    // Limpa o EditText
+                    notas.setText("");
                 }
             });
         }
