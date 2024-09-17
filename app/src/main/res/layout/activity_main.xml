@@ -7,52 +7,61 @@
     android:padding="50dp"
     tools:context=".MainActivity">
 
-
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="280dp"
-        android:layout_height="326dp"
+        android:layout_width="289dp"
+        android:layout_height="450dp"
         android:background="@drawable/edit_text_background"
         android:gravity="top|start"
         android:hint="@string/note_content"
         android:inputType="textMultiLine"
-        android:maxLines="5"
         android:padding="16dp"
         android:textAlignment="viewStart"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.066" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="90dp"
+        android:height="35dp"
+        android:background="@color/green"
+        android:text="@string/button_page2"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonSave" />
 
     <Button
         android:id="@+id/buttonSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="180dp"
-        android:height="70dp"
+        android:width="90dp"
+        android:height="35dp"
         android:background="@color/green"
         android:text="@string/button_save"
-        android:textSize="30dp"
+        android:textSize="10sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText1"
-        app:layout_constraintVertical_bias="0.369" />
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
 
-    <TextView
-        android:id="@+id/textViewNote"
-        android:layout_width="match_parent"
+
+    <Button
+        android:id="@+id/buttonPage3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buttonSave"
-        android:layout_marginTop="3dp"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:width="90dp"
+        android:height="35dp"
+        android:background="@color/green"
+        android:text="@string/button_page3"
+        android:textSize="10sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSave" />
+        app:layout_constraintTop_toTopOf="@+id/buttonSave" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
