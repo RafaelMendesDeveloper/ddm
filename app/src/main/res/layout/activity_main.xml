@@ -7,6 +7,21 @@
     android:padding="50dp"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/buttonPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="90dp"
+        android:height="35dp"
+        android:background="@color/green"
+        android:text="PAGE 4"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSave" />
+
     <EditText
         android:id="@+id/editText1"
         android:layout_width="289dp"

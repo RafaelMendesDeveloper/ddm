@@ -4,6 +4,7 @@
     <string name="button_save">SAVE</string>
     <string name="screen2">Recieve It</string>
     <string name="screen3">See Your Toughts</string>
-    <string name="button_page2">PAGE 2</string>
-    <string name="button_page3">PAGE 3</string>
+    <string name="button_page2">SAVED NOTE</string>
+    <string name="button_page3">WIDGETS SCREEN</string>
+    <string name="progress">Progress: 0/100</string>
 </resources>
