@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Contador"
         tools:targetApi="31">
         <activity
+            android:name=".Paint"
+            android:exported="false" />
+        <activity
             android:name=".ListActivity9"
             android:exported="false" />
         <activity

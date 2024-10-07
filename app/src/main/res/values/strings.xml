@@ -9,4 +9,5 @@
     <string name="progress">Progress: 0/100</string>
     <string name="list">List</string>
     <string name="classButton">Home</string>
+    <string name="hello">HELLO</string>
 </resources>
