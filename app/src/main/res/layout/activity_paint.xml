@@ -10,13 +10,13 @@
         android:id="@+id/paintButton"
         android:layout_width="160dp"
         android:layout_height="60dp"
-        android:text="@string/hello"
+        android:text="@string/color"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/simplePaint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"></Button>
+        tools:ignore="MissingConstraints" />
 
     <com.example.contador.SimplePaint
         android:id="@+id/simplePaint"
@@ -26,5 +26,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/paintButton"></com.example.contador.SimplePaint>
+        app:layout_constraintTop_toBottomOf="@+id/paintButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
