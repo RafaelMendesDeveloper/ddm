@@ -15,6 +15,7 @@ public class SimplePaint extends View {
     Path myPath;
     Paint myPaint;
 
+
     public SimplePaint(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
 
@@ -22,7 +23,7 @@ public class SimplePaint extends View {
         myPath = new Path();
 
         myPaint.setColor(Color.BLACK);
-        myPaint.setStrokeWidth(6);
+        myPaint.setStrokeWidth(15);
         myPaint.setAntiAlias(true);
         myPaint.setStyle(Paint.Style.STROKE);
     }

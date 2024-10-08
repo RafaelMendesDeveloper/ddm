@@ -12,6 +12,12 @@
         android:theme="@style/Theme.Contador"
         tools:targetApi="31">
         <activity
+            android:name=".PlanetaAdapterRecyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".MainListagem"
+            android:exported="false" />
+        <activity
             android:name=".Paint"
             android:exported="false" />
         <activity

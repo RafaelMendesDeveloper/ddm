@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity{
         Button buttonPage3 = findViewById(R.id.buttonPage3);
         Button buttonPage4 = findViewById(R.id.buttonPage);
         Button buttonPaint = findViewById(R.id.buttonPaint);
+        Button buttonPlanet = findViewById(R.id.buttonPlanets);
 
         EditText notas = findViewById(R.id.editText1);
 
@@ -54,6 +55,12 @@ public class MainActivity extends AppCompatActivity{
 
         buttonPaint.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), Paint.class);
+
+            startActivity(intent);
+        });
+
+        buttonPlanet.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), MainListagem.class);
 
             startActivity(intent);
         });
