@@ -17,7 +17,7 @@ public class PlanetaDao {
     planetas.add(new Planeta("JÚPITER",R.drawable.jupter));
     planetas.add(new Planeta( "SATURNO", R.drawable.saturn));
     planetas.add(new Planeta("URANO",R.drawable.uranus));
-    planetas.add((new Planeta("SOL",R.drawable.sun)));
+    planetas.add((new Planeta("SOL ",R.drawable.sun)));
     }
 
     public ArrayList<Planeta> getAllPlanetas(){
