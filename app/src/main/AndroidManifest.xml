@@ -12,13 +12,16 @@
         android:theme="@style/Theme.Contador"
         tools:targetApi="31">
         <activity
-            android:name=".PlanetaAdapterRecyclerView"
+            android:name=".launcher.LauncherMainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainListagem"
+            android:name=".planetas.PlanetaAdapterRecyclerView"
             android:exported="false" />
         <activity
-            android:name=".Paint"
+            android:name=".planetas.MainListagem"
+            android:exported="false" />
+        <activity
+            android:name=".paint.Paint"
             android:exported="false" />
         <activity
             android:name=".ListActivity9"

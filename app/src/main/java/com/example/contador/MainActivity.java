@@ -8,6 +8,10 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.contador.launcher.LauncherMainActivity;
+import com.example.contador.paint.Paint;
+import com.example.contador.planetas.MainListagem;
+
 public class MainActivity extends AppCompatActivity{
     private String note;
 
@@ -23,6 +27,7 @@ public class MainActivity extends AppCompatActivity{
         Button buttonPage4 = findViewById(R.id.buttonPage);
         Button buttonPaint = findViewById(R.id.buttonPaint);
         Button buttonPlanet = findViewById(R.id.buttonPlanets);
+        Button launcher = findViewById(R.id.buttonForLaunch);
 
         EditText notas = findViewById(R.id.editText1);
 
@@ -61,6 +66,12 @@ public class MainActivity extends AppCompatActivity{
 
         buttonPlanet.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), MainListagem.class);
+
+            startActivity(intent);
+        });
+
+        launcher.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), LauncherMainActivity.class);
 
             startActivity(intent);
         });

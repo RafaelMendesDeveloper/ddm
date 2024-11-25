@@ -1,4 +1,6 @@
-package com.example.contador;
+package com.example.contador.planetas;
+
+import com.example.contador.R;
 
 import java.util.ArrayList;
 
@@ -10,7 +12,7 @@ public class PlanetaDao {
 
     planetas = new ArrayList<>();
 
-    planetas.add(new Planeta("MERCÚRIO",R.drawable.mercury));
+    planetas.add(new Planeta("MERCÚRIO", R.drawable.mercury));
     planetas.add(new Planeta("VÊNUS",R.drawable.venus));
     planetas.add(new Planeta("TERRA",R.drawable.earth));
     planetas.add(new Planeta("MARTE",R.drawable.mars));

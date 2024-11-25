@@ -102,5 +102,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/buttonPage" />
 
+    <Button
+        android:id="@+id/buttonForLaunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launcher"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.contador;
+package com.example.contador.planetas;
 
 public class Planeta {
     String nome;

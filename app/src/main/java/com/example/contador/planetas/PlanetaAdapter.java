@@ -1,4 +1,4 @@
-package com.example.contador;
+package com.example.contador.planetas;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.example.contador.R;
 
 import java.util.List;
 
