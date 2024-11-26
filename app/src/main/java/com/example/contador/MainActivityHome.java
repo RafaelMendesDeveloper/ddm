@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 
 public class MainActivityHome extends AppCompatActivity {
@@ -27,9 +28,10 @@ public class MainActivityHome extends AppCompatActivity {
 
         buttonHome.setOnClickListener(
                 v -> {
+                    Log.d("HomeButton", "Botão Home pressionado");
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-
                     startActivity(intent);
+                    Log.d("HomeButton", "Iniciando MainActivity");
                 });
     }
 }

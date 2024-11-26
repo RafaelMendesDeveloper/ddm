@@ -12,6 +12,12 @@
         android:theme="@style/Theme.Contador"
         tools:targetApi="31">
         <activity
+            android:name=".database.DataBaseAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".database.DataBaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".launcher.LauncherMainActivity"
             android:exported="false" />
         <activity
