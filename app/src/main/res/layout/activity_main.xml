@@ -7,25 +7,12 @@
     android:padding="50dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/buttonPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="90dp"
-        android:height="35dp"
-        android:background="@color/green"
-        android:text="PAGE 4"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSave" />
 
     <EditText
         android:id="@+id/editText1"
         android:layout_width="299dp"
         android:layout_height="302dp"
+        android:layout_marginTop="50sp"
         android:background="@drawable/edit_text_background"
         android:gravity="top|start"
         android:hint="@string/note_content"
@@ -35,19 +22,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonPage2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="90dp"
-        android:height="35dp"
-        android:background="@color/green"
-        android:text="@string/button_page2"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonSave" />
 
     <Button
         android:id="@+id/buttonSave"
@@ -61,27 +35,80 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText1" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editText1"
+        app:layout_constraintVertical_bias="0.633" />
 
     <Button
-        android:id="@+id/buttonPage3"
+        android:id="@+id/databaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="DataBase"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonForLaunch" />
+
+    <Button
+        android:id="@+id/tacoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TACO"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonForLaunch" />
+
+    <Button
+        android:id="@+id/buttonForLaunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launcher"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText1"
+        app:layout_constraintVertical_bias="0.638" />
+
+    <Button
+        android:id="@+id/buttonPage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:width="90dp"
+        android:height="35dp"
+        android:background="@color/green"
+        android:text="@string/button_page2"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonSave" />
+
+    <Button
+        android:id="@+id/buttonPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="90dp"
         android:height="35dp"
         android:background="@color/green"
-        android:text="@string/button_page3"
+        android:text="SENSOR"
         android:textSize="10sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonSave" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSave"
+        app:layout_constraintVertical_bias="0.836" />
 
     <Button
         android:id="@+id/buttonPaint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:width="90dp"
         android:height="35dp"
         android:text="PAINT"
@@ -94,6 +121,7 @@
         android:id="@+id/buttonPlanets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:width="90dp"
         android:height="35dp"
         android:text="PLANETAS"
@@ -103,24 +131,18 @@
         app:layout_constraintTop_toTopOf="@+id/buttonPage" />
 
     <Button
-        android:id="@+id/buttonForLaunch"
+        android:id="@+id/buttonPage3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Launcher"
+        android:layout_marginTop="8dp"
+        android:width="90dp"
+        android:height="35dp"
+        android:background="@color/green"
+        android:text="@string/button_page3"
         android:textSize="10sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText1" />
-
-    <Button
-        android:id="@+id/databaseButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DataBase"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonForLaunch" />
+        app:layout_constraintTop_toTopOf="@+id/buttonSave" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

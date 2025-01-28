@@ -1,0 +1,7 @@
+<!-- res/layout/item_food.xml -->
+<TextView android:id="@+id/text_food_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:textSize="16sp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

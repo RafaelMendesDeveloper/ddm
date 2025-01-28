@@ -12,6 +12,18 @@
         android:theme="@style/Theme.Contador"
         tools:targetApi="31">
         <activity
+            android:name=".SensorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".taco.TacoDataBaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".taco.TacoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sensores.SensorActivity"
+            android:exported="false" />
+        <activity
             android:name=".database.DataBaseAdapter"
             android:exported="false" />
         <activity

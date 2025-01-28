@@ -12,6 +12,7 @@ import com.example.contador.database.DataBaseActivity;
 import com.example.contador.launcher.LauncherMainActivity;
 import com.example.contador.paint.Paint;
 import com.example.contador.planetas.MainListagem;
+//import com.example.contador.taco.TacoActivity;
 
 public class MainActivity extends AppCompatActivity{
     private String note;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity{
         Button buttonPlanet = findViewById(R.id.buttonPlanets);
         Button launcher = findViewById(R.id.buttonForLaunch);
         Button dataBaseButton = findViewById(R.id.databaseButton);
+        Button tacoButton = findViewById(R.id.tacoButton);
 
         EditText notas = findViewById(R.id.editText1);
 
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity{
         });
 
         buttonPage4.setOnClickListener( v -> {
-            Intent intent = new Intent(getApplicationContext(), MainActivityViewGroups.class);
+            Intent intent = new Intent(getApplicationContext(), SensorActivity.class);
 
             startActivity(intent);
         });
@@ -83,6 +85,12 @@ public class MainActivity extends AppCompatActivity{
 
             startActivity(intent);
         });
+
+//        tacoButton.setOnClickListener(view -> {
+//            Intent intent = new Intent(getApplicationContext(), TacoActivity.class);
+//
+//            startActivity(intent);
+//        });
 
     }
 
