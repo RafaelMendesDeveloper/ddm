@@ -12,6 +12,7 @@ import com.example.contador.database.DataBaseActivity;
 import com.example.contador.launcher.LauncherMainActivity;
 import com.example.contador.paint.Paint;
 import com.example.contador.planetas.MainListagem;
+import com.example.contador.taco.TacoActivity;
 //import com.example.contador.taco.TacoActivity;
 
 public class MainActivity extends AppCompatActivity{
@@ -86,11 +87,11 @@ public class MainActivity extends AppCompatActivity{
             startActivity(intent);
         });
 
-//        tacoButton.setOnClickListener(view -> {
-//            Intent intent = new Intent(getApplicationContext(), TacoActivity.class);
-//
-//            startActivity(intent);
-//        });
+        tacoButton.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), TacoActivity.class);
+
+            startActivity(intent);
+        });
 
     }
 
